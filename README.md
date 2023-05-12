@@ -16,23 +16,10 @@ npm install --save-dev typescript
 ```
 ## 7: Start cypress project:
 ```javascript
-npm run test or npx cypress open
+npx cypress open
 ```
 - https://docs.cypress.io/guides/tooling/typescript-support#Install-TypeScript
 
-## 8. Xpath setup:
-- https://github.com/cypress-io/cypress/tree/develop/npm/xpath
-```javascript
-npm install -D @cypress/xpath --save-dev
-```
-Add the code into e2e.js:
-```javascript
-require('@cypress/xpath');
-```
-Importance note: add the code  into tsconfig.json:
-```javascript
-"types": ["cypress", "node", "@cypress/xpath"]
-```
 ## Project structure
 ```javascript
 ProjectRoot
@@ -50,9 +37,22 @@ ProjectRoot
     |__tsconfig.json
 ```
 ## Demo video
-
+https://drive.google.com/file/d/1Ps6Rh-azwN6_Poy6eKYHbqRqrAkD1rN9/view?usp=sharing
 
 # Additional:
+## 8. Xpath setup:
+- https://github.com/cypress-io/cypress/tree/develop/npm/xpath
+```javascript
+npm install -D @cypress/xpath --save-dev
+```
+Add the code into e2e.js:
+```javascript
+require('@cypress/xpath');
+```
+Importance note: add the code  into tsconfig.json:
+```javascript
+"types": ["cypress", "node", "@cypress/xpath"]
+```
 ## 9. Install report: 
 - https://www.npmjs.com/package/cypress-mochawesome-reporter
 ```javascript
